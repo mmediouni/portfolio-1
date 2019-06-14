@@ -1,0 +1,356 @@
+*{
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    background-color: black;
+    color: white;
+    line-height: 1.8;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+aside{
+    background-color:#222;
+    width: 17%;
+    position :fixed;
+    top:0px;
+    left:0px;
+    height: 100%;
+    overflow:none;
+    z-index:1;
+    text-align:center;
+}
+aside img{
+    width: 65%;
+    border-radius: 50%;
+}
+aside h1{
+   
+    text-align: center;
+    margin:auto;
+    margin-top:20px;
+    font-family: 'Merienda', cursive;
+}
+
+aside nav a{
+    display:block;
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    text-align:center;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    text-transform:uppercase;
+    padding:10px;
+}
+aside nav a .fas,aside nav a .far{
+    display: block;
+    text-align: center;
+    font-size: 34px;
+}
+aside a:hover{
+    background-color:#FF7F50;
+}
+#folio a{
+    color:white;
+    background-color:red;
+}
+main{
+    display: inline-block;
+    max-width: 83%;
+    margin-left:18%;
+    padding:12px 50px 12px 50px;
+}
+
+#home{
+    font-size:1.8em;
+    font-family: 'Merienda', cursive;
+    margin-top:90px;
+    text-align: center;
+    margin: auto;
+}
+#about span{
+    text-transform: uppercase
+}
+#about .maPersonne{
+    width: 80%;
+    margin:auto;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 2.5;
+    margin-top:30px;
+    font-size:20px;
+}
+#competence h2,
+#about h2,
+#folio h2,
+#contact h2{
+    font-size:1.5em;
+    text-align: center;
+    margin: auto;
+    margin-top:70px;
+    letter-spacing: 1px;
+    font-family: 'Merienda', cursive;
+    margin-bottom:70px;
+}
+
+#competence h2:hover,
+#about h2:hover,
+#folio h2:hover,
+#contact h2:hover {
+    -o-animation: bounce 0.40s ease infinite alternate;
+    -webkit-animation: bounce 0.40s ease infinite alternate;
+    -moz-animation: bounce 0.40s ease infinite alternate;
+            animation: bounce 0.40s ease infinite alternate;
+            color:#FF7F50;
+}
+@keyframes bounce{
+	from{
+        -webkit-transform: translateY(0);
+        transform :translateY(0);
+    }
+    to{
+        -webkit-transform: translateY(-20px);
+        transform :translateY(-20px);
+    }
+}
+@-o-keyframes bounce{
+	from{
+        -webkit-transform: translateY(0);
+        transform :translateY(0);
+    }
+    to{
+        -webkit-transform: translateY(-20px);
+        transform :translateY(-20px);
+    }
+}
+@-moz-keyframes bounce{
+	from{
+        -webkit-transform: translateY(0);
+        transform :translateY(0);
+    }
+    to{
+        -webkit-transform: translateY(-20px);
+        transform :translateY(-20px);
+    }
+}
+@-webkit-keyframes bounce{
+	from{
+        -webkit-transform: translateY(0);
+        transform :translateY(0);
+    }
+    to{
+        -webkit-transform: translateY(-20px);
+        transform :translateY(-20px);
+    }
+}
+#competence span{
+    font-size:1.2em;
+    letter-spacing: 1px;
+}
+.container{
+    background-color: #b2b2b2;
+    width: 100%;
+    border-radius:40px;
+}
+.competence{
+    text-align: right;
+    padding-right: 20px;
+    line-height: 30px;
+    color: white;
+    background-color: #424242;
+    border-radius:40px;
+}
+.js{
+    width: 60%;
+}
+.html{
+    width: 95%;
+}
+.php{
+    width: 70%;
+}
+.css{
+    width: 95%;
+}
+.jquery{
+    width: 60%;
+}
+.bootstrap{
+    width: 80%;
+}
+
+#contact input,textarea{
+    width: 100%;
+    padding: 15px;
+    background-color: black;
+    border-radius:40px;
+    color:white;
+}
+form label{
+    display:inline-block;
+    padding:0 0 10px 0;
+    font-size:1.2em;
+    letter-spacing: 1px;
+}
+form div{
+    margin-bottom: 30px;
+}
+button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    width: 20%;
+    font-size:1.2em;
+    letter-spacing: 1px;
+}
+button:hover{
+    background-color: #FF7F50;
+    color: black;
+    border: 1px solid #FF7F50;
+    box-shadow: 2px 2px 3px #FF7F50;
+}
+input:focus,textarea:focus{
+    border: 1px solid green;
+     box-shadow: 2px 2px 9px green;
+     color:white;
+}
+.erreur{
+    background-color:rgba(255, 160, 122,0.8);
+    padding:8px;
+    border-radius: 15px;
+    font-size:22px;
+    width: 50%;
+    margin-top:10px;
+}
+footer{
+    display: block;
+    max-width: 83%;
+    margin-left:17%;
+    background-color:#1D4851;
+}
+footer ul li{
+    list-style-type: none;
+
+    padding:10px;
+    font-size:20px;
+}
+footer ul li a{
+    text-decoration: none;
+    color:white;
+}
+@media screen and (max-width: 1024px){
+    aside{
+        display:block;
+        width: 100%;
+        height:26%;
+        padding:10px;
+    }
+    aside nav a{
+        display:inline-block;
+        padding:10px 50px 0px 50px;
+        margin-top:80px;
+        font-size: 14px;
+    }
+    aside img{
+        width: 20%;
+        float: left;
+        height: 70%;
+    }
+    aside h1{
+        display: block;
+        position:absolute;
+        top:70%;
+        left:2%;
+    }
+    aside a:hover{
+        transform: scale(1.5);
+        background-color:inherit;
+        color:#FF7F50;
+    }
+    .clear{
+        clear:both;
+    }
+    main{
+        max-width: 100%;
+        margin:auto;
+    }
+    #home h1{
+        margin-top:250px;
+        font-size:1.4em;
+       
+    }
+    footer{
+       background-color:black;
+       opacity:0.5;
+    }
+   
+ 
+} 
+@media screen and (max-width: 767px){
+    aside h1{
+        display: block;
+        position:absolute;
+        top:70%;
+        left:1%;
+        font-size:18px;
+    }
+    aside {
+        display:flex;
+        justify-content: space-between;
+        height:24%;
+    }
+    
+    aside nav a{
+        display:inline-block;
+        margin-bottom: 0px;
+        margin-right: 20px;
+    }
+    aside img{
+        float:none;
+    }
+    #home h1{
+        margin-top:250px;
+        font-size:25px;
+    }
+    #about .maPersonne{
+        max-width: 100%;
+    }
+    #contact button{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 400px){
+    aside {
+       
+        display:flex;
+        justify-content: space-between;
+        height:28%;
+    }
+    aside h1{
+        font-size:15px;
+        margin-left:8%;
+    }
+    aside img{
+        width: 40%;
+    }
+    aside nav a{
+        display:block;
+        font-size: 15px;
+        margin-bottom: 0px;
+        margin-top: 30px;
+        margin-right: 60px;
+        padding:0px;   
+    }
+    aside nav a .fas,aside nav a .far{
+        font-size: 17px;
+    }
+    #home h1{
+        font-size:23px;
+    }
+    #contact button{
+        width: 50%;
+    }
+}
